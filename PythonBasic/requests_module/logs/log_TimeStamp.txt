@@ -1,0 +1,87 @@
+20:10:26:546   ERROR -> Exception in getCompoundIDs :: 've'
+Traceback (most recent call last):
+  File "d:\Development\My_Practise_Work\PythonDeepLearning\PythonBasic\requests_module\deviceInsights_requests.py", line 29, in getCompoundIDs
+    url = f"{diINFO['protocol']}://{diINFO['url']}{diINFO['ve']}"
+KeyError: 've'
+20:11:34: 72   ERROR -> Exception in getCompoundIDs :: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "d:\Development\My_Practise_Work\PythonDeepLearning\PythonBasic\requests_module\deviceInsights_requests.py", line 31, in getCompoundIDs
+    qcCompoundIDs = json.loads(responseData.text)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+20:12:41:976   ERROR -> Exception in getCompoundIDs :: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "d:\Development\My_Practise_Work\PythonDeepLearning\PythonBasic\requests_module\deviceInsights_requests.py", line 31, in getCompoundIDs
+    qcCompoundIDs = json.loads(responseData.text)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+20:29:35: 71   ERROR -> Exception in getCompoundIDs :: the JSON object must be str, bytes or bytearray, not dict
+Traceback (most recent call last):
+  File "D:\Development\My_Practise_Work\PythonDeepLearning\PythonBasic\requests_module\deviceInsights_requests.py", line 37, in getCompoundIDs
+    logsWriter.info(json.loads(qcCompoundIDs))
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+20:30:02:503    INFO -> {"isSuccess": true, "data": [{"COMP_ID": 1247, "COMP_NAME": "7-Amino Clonazepam"}, {"COMP_ID": 1248, "COMP_NAME": "Acetaminophen"}, {"COMP_ID": 1249, "COMP_NAME": "Alpha-Hydroxy Alprazolam"}, {"COMP_ID": 1250, "COMP_NAME": "Alpha-PVP"}, {"COMP_ID": 1251, "COMP_NAME": "Alprazolam"}, {"COMP_ID": 1252, "COMP_NAME": "Amitriptyline"}, {"COMP_ID": 1253, "COMP_NAME": "Amphetamine"}, {"COMP_ID": 1254, "COMP_NAME": "Buprenorphine"}, {"COMP_ID": 1255, "COMP_NAME": "Bupropion"}, {"COMP_ID": 1256, "COMP_NAME": "Carisoprodol-SOMA"}, {"COMP_ID": 1257, "COMP_NAME": "Citalopram"}, {"COMP_ID": 1258, "COMP_NAME": "Cocaine Metabolite (Benzoylecgonine)"}, {"COMP_ID": 1259, "COMP_NAME": "Codeine"}, {"COMP_ID": 1260, "COMP_NAME": "Cyclobenzaprine"}, {"COMP_ID": 1261, "COMP_NAME": "Desmethyldoxepin"}, {"COMP_ID": 1262, "COMP_NAME": "Duloxetine"}, {"COMP_ID": 1263, "COMP_NAME": "Fentanyl"}, {"COMP_ID": 1264, "COMP_NAME": "Fluoxetine"}, {"COMP_ID": 1265, "COMP_NAME": "Gabapentin"}, {"COMP_ID": 1266, "COMP_NAME": "Heroin Metabolite (6MAM)"}, {"COMP_ID": 1267, "COMP_NAME": "Hydrocodone"}, {"COMP_ID": 1268, "COMP_NAME": "Hydromorphone"}, {"COMP_ID": 1269, "COMP_NAME": "Ketamine"}, {"COMP_ID": 1270, "COMP_NAME": "Lorazepam"}, {"COMP_ID": 1271, "COMP_NAME": "MDA"}, {"COMP_ID": 1272, "COMP_NAME": "MDMA"}, {"COMP_ID": 1273, "COMP_NAME": "Meperidine"}, {"COMP_ID": 1274, "COMP_NAME": "Meprobamate"}, {"COMP_ID": 1275, "COMP_NAME": "Methadone"}, {"COMP_ID": 1276, "COMP_NAME": "Methadone Metabolite (EDDP)"}, {"COMP_ID": 1277, "COMP_NAME": "Methamphetamine"}, {"COMP_ID": 1278, "COMP_NAME": "Methylphenidate"}, {"COMP_ID": 1279, "COMP_NAME": "Mirtazapine"}, {"COMP_ID": 1280, "COMP_NAME": "Morphine"}, {"COMP_ID": 1281, "COMP_NAME": "Naloxone"}, {"COMP_ID": 1282, "COMP_NAME": "Naltrexone"}, {"COMP_ID": 1283, "COMP_NAME": "Norbuprenorphine"}, {"COMP_ID": 1284, "COMP_NAME": "Nordiazepam"}, {"COMP_ID": 1285, "COMP_NAME": "Norfentanyl"}, {"COMP_ID": 1286, "COMP_NAME": "Norhydrocodone"}, {"COMP_ID": 1287, "COMP_NAME": "Normeperidine"}, {"COMP_ID": 1288, "COMP_NAME": "Noroxycodone"}, {"COMP_ID": 1289, "COMP_NAME": "Noroxymorphone"}, {"COMP_ID": 1290, "COMP_NAME": "Nortriptyline"}, {"COMP_ID": 1291, "COMP_NAME": "O-Desmethyl-cis-tramadol"}, {"COMP_ID": 1292, "COMP_NAME": "Olanzapine"}, {"COMP_ID": 1293, "COMP_NAME": "Oxazepam"}, {"COMP_ID": 1294, "COMP_NAME": "Oxycodone"}, {"COMP_ID": 1295, "COMP_NAME": "Oxymorphone"}, {"COMP_ID": 1296, "COMP_NAME": "Paroxetine"}, {"COMP_ID": 1297, "COMP_NAME": "Phencyclidine-PCP"}, {"COMP_ID": 1298, "COMP_NAME": "Phentermine"}, {"COMP_ID": 1299, "COMP_NAME": "Pregabalin"}, {"COMP_ID": 1300, "COMP_NAME": "Propoxyphene"}, {"COMP_ID": 1301, "COMP_NAME": "Sertraline"}, {"COMP_ID": 1302, "COMP_NAME": "Tapentadol"}, {"COMP_ID": 1303, "COMP_NAME": "Temazepam"}, {"COMP_ID": 1304, "COMP_NAME": "THC-11-Nor-Delta-9-Carboxy"}, {"COMP_ID": 1305, "COMP_NAME": "Tramadol"}, {"COMP_ID": 1306, "COMP_NAME": "Venlafaxine"}, {"COMP_ID": 1307, "COMP_NAME": "Zolpidem"}], "7-Amino Clonazepam": 1247, "Acetaminophen": 1248, "Alpha-Hydroxy Alprazolam": 1249, "Alpha-PVP": 1250, "Alprazolam": 1251, "Amitriptyline": 1252, "Amphetamine": 1253, "Buprenorphine": 1254, "Bupropion": 1255, "Carisoprodol-SOMA": 1256, "Citalopram": 1257, "Cocaine Metabolite (Benzoylecgonine)": 1258, "Codeine": 1259, "Cyclobenzaprine": 1260, "Desmethyldoxepin": 1261, "Duloxetine": 1262, "Fentanyl": 1263, "Fluoxetine": 1264, "Gabapentin": 1265, "Heroin Metabolite (6MAM)": 1266, "Hydrocodone": 1267, "Hydromorphone": 1268, "Ketamine": 1269, "Lorazepam": 1270, "MDA": 1271, "MDMA": 1272, "Meperidine": 1273, "Meprobamate": 1274, "Methadone": 1275, "Methadone Metabolite (EDDP)": 1276, "Methamphetamine": 1277, "Methylphenidate": 1278, "Mirtazapine": 1279, "Morphine": 1280, "Naloxone": 1281, "Naltrexone": 1282, "Norbuprenorphine": 1283, "Nordiazepam": 1284, "Norfentanyl": 1285, "Norhydrocodone": 1286, "Normeperidine": 1287, "Noroxycodone": 1288, "Noroxymorphone": 1289, "Nortriptyline": 1290, "O-Desmethyl-cis-tramadol": 1291, "Olanzapine": 1292, "Oxazepam": 1293, "Oxycodone": 1294, "Oxymorphone": 1295, "Paroxetine": 1296, "Phencyclidine-PCP": 1297, "Phentermine": 1298, "Pregabalin": 1299, "Propoxyphene": 1300, "Sertraline": 1301, "Tapentadol": 1302, "Temazepam": 1303, "THC-11-Nor-Delta-9-Carboxy": 1304, "Tramadol": 1305, "Venlafaxine": 1306, "Zolpidem": 1307}
+20:32:02:175    INFO -> {}
+20:32:46:642    INFO -> {"7-Amino Clonazepam": 1247, "Acetaminophen": 1248, "Alpha-Hydroxy Alprazolam": 1249, "Alpha-PVP": 1250, "Alprazolam": 1251, "Amitriptyline": 1252, "Amphetamine": 1253, "Buprenorphine": 1254, "Bupropion": 1255, "Carisoprodol-SOMA": 1256, "Citalopram": 1257, "Cocaine Metabolite (Benzoylecgonine)": 1258, "Codeine": 1259, "Cyclobenzaprine": 1260, "Desmethyldoxepin": 1261, "Duloxetine": 1262, "Fentanyl": 1263, "Fluoxetine": 1264, "Gabapentin": 1265, "Heroin Metabolite (6MAM)": 1266, "Hydrocodone": 1267, "Hydromorphone": 1268, "Ketamine": 1269, "Lorazepam": 1270, "MDA": 1271, "MDMA": 1272, "Meperidine": 1273, "Meprobamate": 1274, "Methadone": 1275, "Methadone Metabolite (EDDP)": 1276, "Methamphetamine": 1277, "Methylphenidate": 1278, "Mirtazapine": 1279, "Morphine": 1280, "Naloxone": 1281, "Naltrexone": 1282, "Norbuprenorphine": 1283, "Nordiazepam": 1284, "Norfentanyl": 1285, "Norhydrocodone": 1286, "Normeperidine": 1287, "Noroxycodone": 1288, "Noroxymorphone": 1289, "Nortriptyline": 1290, "O-Desmethyl-cis-tramadol": 1291, "Olanzapine": 1292, "Oxazepam": 1293, "Oxycodone": 1294, "Oxymorphone": 1295, "Paroxetine": 1296, "Phencyclidine-PCP": 1297, "Phentermine": 1298, "Pregabalin": 1299, "Propoxyphene": 1300, "Sertraline": 1301, "Tapentadol": 1302, "Temazepam": 1303, "THC-11-Nor-Delta-9-Carboxy": 1304, "Tramadol": 1305, "Venlafaxine": 1306, "Zolpidem": 1307}
+20:35:15:885    INFO -> {"7-Amino Clonazepam": 1247, "Acetaminophen": 1248, "Alpha-Hydroxy Alprazolam": 1249, "Alpha-PVP": 1250, "Alprazolam": 1251, "Amitriptyline": 1252, "Amphetamine": 1253, "Buprenorphine": 1254, "Bupropion": 1255, "Carisoprodol-SOMA": 1256, "Citalopram": 1257, "Cocaine Metabolite (Benzoylecgonine)": 1258, "Codeine": 1259, "Cyclobenzaprine": 1260, "Desmethyldoxepin": 1261, "Duloxetine": 1262, "Fentanyl": 1263, "Fluoxetine": 1264, "Gabapentin": 1265, "Heroin Metabolite (6MAM)": 1266, "Hydrocodone": 1267, "Hydromorphone": 1268, "Ketamine": 1269, "Lorazepam": 1270, "MDA": 1271, "MDMA": 1272, "Meperidine": 1273, "Meprobamate": 1274, "Methadone": 1275, "Methadone Metabolite (EDDP)": 1276, "Methamphetamine": 1277, "Methylphenidate": 1278, "Mirtazapine": 1279, "Morphine": 1280, "Naloxone": 1281, "Naltrexone": 1282, "Norbuprenorphine": 1283, "Nordiazepam": 1284, "Norfentanyl": 1285, "Norhydrocodone": 1286, "Normeperidine": 1287, "Noroxycodone": 1288, "Noroxymorphone": 1289, "Nortriptyline": 1290, "O-Desmethyl-cis-tramadol": 1291, "Olanzapine": 1292, "Oxazepam": 1293, "Oxycodone": 1294, "Oxymorphone": 1295, "Paroxetine": 1296, "Phencyclidine-PCP": 1297, "Phentermine": 1298, "Pregabalin": 1299, "Propoxyphene": 1300, "Sertraline": 1301, "Tapentadol": 1302, "Temazepam": 1303, "THC-11-Nor-Delta-9-Carboxy": 1304, "Tramadol": 1305, "Venlafaxine": 1306, "Zolpidem": 1307}
+20:50:10: 61    INFO -> {"7-Amino Clonazepam": 1247, "Acetaminophen": 1248, "Alpha-Hydroxy Alprazolam": 1249, "Alpha-PVP": 1250, "Alprazolam": 1251, "Amitriptyline": 1252, "Amphetamine": 1253, "Buprenorphine": 1254, "Bupropion": 1255, "Carisoprodol-SOMA": 1256, "Citalopram": 1257, "Cocaine Metabolite (Benzoylecgonine)": 1258, "Codeine": 1259, "Cyclobenzaprine": 1260, "Desmethyldoxepin": 1261, "Duloxetine": 1262, "Fentanyl": 1263, "Fluoxetine": 1264, "Gabapentin": 1265, "Heroin Metabolite (6MAM)": 1266, "Hydrocodone": 1267, "Hydromorphone": 1268, "Ketamine": 1269, "Lorazepam": 1270, "MDA": 1271, "MDMA": 1272, "Meperidine": 1273, "Meprobamate": 1274, "Methadone": 1275, "Methadone Metabolite (EDDP)": 1276, "Methamphetamine": 1277, "Methylphenidate": 1278, "Mirtazapine": 1279, "Morphine": 1280, "Naloxone": 1281, "Naltrexone": 1282, "Norbuprenorphine": 1283, "Nordiazepam": 1284, "Norfentanyl": 1285, "Norhydrocodone": 1286, "Normeperidine": 1287, "Noroxycodone": 1288, "Noroxymorphone": 1289, "Nortriptyline": 1290, "O-Desmethyl-cis-tramadol": 1291, "Olanzapine": 1292, "Oxazepam": 1293, "Oxycodone": 1294, "Oxymorphone": 1295, "Paroxetine": 1296, "Phencyclidine-PCP": 1297, "Phentermine": 1298, "Pregabalin": 1299, "Propoxyphene": 1300, "Sertraline": 1301, "Tapentadol": 1302, "Temazepam": 1303, "THC-11-Nor-Delta-9-Carboxy": 1304, "Tramadol": 1305, "Venlafaxine": 1306, "Zolpidem": 1307}
+20:50:56:381    INFO -> {"7-Amino Clonazepam": 1247, "Acetaminophen": 1248, "Alpha-Hydroxy Alprazolam": 1249, "Alpha-PVP": 1250, "Alprazolam": 1251, "Amitriptyline": 1252, "Amphetamine": 1253, "Buprenorphine": 1254, "Bupropion": 1255, "Carisoprodol-SOMA": 1256, "Citalopram": 1257, "Cocaine Metabolite (Benzoylecgonine)": 1258, "Codeine": 1259, "Cyclobenzaprine": 1260, "Desmethyldoxepin": 1261, "Duloxetine": 1262, "Fentanyl": 1263, "Fluoxetine": 1264, "Gabapentin": 1265, "Heroin Metabolite (6MAM)": 1266, "Hydrocodone": 1267, "Hydromorphone": 1268, "Ketamine": 1269, "Lorazepam": 1270, "MDA": 1271, "MDMA": 1272, "Meperidine": 1273, "Meprobamate": 1274, "Methadone": 1275, "Methadone Metabolite (EDDP)": 1276, "Methamphetamine": 1277, "Methylphenidate": 1278, "Mirtazapine": 1279, "Morphine": 1280, "Naloxone": 1281, "Naltrexone": 1282, "Norbuprenorphine": 1283, "Nordiazepam": 1284, "Norfentanyl": 1285, "Norhydrocodone": 1286, "Normeperidine": 1287, "Noroxycodone": 1288, "Noroxymorphone": 1289, "Nortriptyline": 1290, "O-Desmethyl-cis-tramadol": 1291, "Olanzapine": 1292, "Oxazepam": 1293, "Oxycodone": 1294, "Oxymorphone": 1295, "Paroxetine": 1296, "Phencyclidine-PCP": 1297, "Phentermine": 1298, "Pregabalin": 1299, "Propoxyphene": 1300, "Sertraline": 1301, "Tapentadol": 1302, "Temazepam": 1303, "THC-11-Nor-Delta-9-Carboxy": 1304, "Tramadol": 1305, "Venlafaxine": 1306, "Zolpidem": 1307}
+21:14:23: 84   ERROR -> Exception in getCompoundIDs :: HTTPSConnectionPool(host='deviceinsights.io', port=443): Max retries exceeded with url: /api/v2/default/mdcontroller/getCompoundByLabAndInstrument/1003/118 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+Traceback (most recent call last):
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 994, in _validate_conn
+    conn.connect()
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connection.py", line 394, in connect
+    ssl_context=context,
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\ssl.py", line 412, in wrap_socket
+    session=session
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\ssl.py", line 853, in _create
+    self.do_handshake()
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\ssl.py", line 1117, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\urllib3\util\retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='deviceinsights.io', port=443): Max retries exceeded with url: /api/v2/default/mdcontroller/getCompoundByLabAndInstrument/1003/118 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Development\My_Practise_Work\PythonDeepLearning\PythonBasic\requests_module\deviceInsights_requests.py", line 31, in getCompoundIDs
+    responseData = requests.get(url)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Datalysys\AppData\Local\Programs\Python\Python37-32\lib\site-packages\requests\adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='deviceinsights.io', port=443): Max retries exceeded with url: /api/v2/default/mdcontroller/getCompoundByLabAndInstrument/1003/118 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)')))

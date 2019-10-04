@@ -1,0 +1,14 @@
+{
+    "labName": "MDController Lab",
+    "userName": "mdcontrolleruser",
+    "pwd": "cbec5f946cb01d2d30e37399412c8e79",
+    "protocol": "http",
+    "url": "deviceinsights.io",
+    "localurl": "localhost:4337",
+    "portnumber": "",
+    "postAdjMeanDataPath": "/api/v2/default/mdcontroller/adjMeanSD",
+    "postQCResultsDataPath": "/api/v2/default/mdcontroller/qcResults",
+    "postQCBatchStatusDataPath": "/api/v2/default/mdcontroller/qcBatchStatus",
+    "getCompoundsListPath": "/api/v2/default/mdcontroller/getCompoundByLabAndInstrument/",
+    "getQcMethodsListPath": "/api/v2/default/mdcontroller/getMethodByLabAndInstrument/"
+}
